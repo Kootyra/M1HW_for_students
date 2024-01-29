@@ -1,8 +1,8 @@
 # Определение класса "Gamer"
-# Необходимо добавить поля nickaname и email
-# Допиши код
+# Задание 2. Добавь поле nickname
+# Задание 3. Добавь поле email
 class Gamer:
-    def __init__(self, name, age, nickaname, email):
+    def __init__(self, name, age, nickname, email):
         self.name = name
         self.age = age
 
@@ -11,11 +11,10 @@ class Gamer:
     def add_game(self, game):
         self.games.append(game)
 
-# Вызов данной функции выводит сообщение "Привет, меня зовут Иван, мне 14 лет."
-# А должен вывести сообщение "Привет, меня зовут Иван, мне 14 лет. Всегда на связи по john@gmail.com. Ищи меня в игре по нику John"
-# Допиши код, чтобы выводилось правильное сообщение
+    # Задание 4. Измени сообщение
     def introduce(self):
         print(f"Привет, меня зовут {self.name}, мне {self.age} лет.")
+
 
 # Создание экземпляра класса "Gamer"
 gamer1 = Gamer("Иван", 14, "John", "john@gmail.com")
